@@ -4,35 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee9da3ff-e275-4176-98c1-88447f93c26a" name="Changes" comment="Suygecu lootbox and gui">
+    <list default="true" id="ee9da3ff-e275-4176-98c1-88447f93c26a" name="Changes" comment="fixed drop item">
       <change beforePath="$PROJECT_DIR$/Forge.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Forge.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/config/splash.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-6.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-7.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/DIM-1/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/DIM-1/data/villages.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/DIM1/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/DIM1/data/villages.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/data/villages.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/playerdata/fe736038-102e-365b-a97e-eabc472944ec.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/playerdata/fe736038-102e-365b-a97e-eabc472944ec.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/stats/fe736038-102e-365b-a97e-eabc472944ec.json" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/stats/fe736038-102e-365b-a97e-eabc472944ec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eclipse/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/usernamecache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyProject.main/mcmodding/pepsa/suygecu/handler/item/LootBoxItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyProject.main/mcmodding/pepsa/suygecu/handler/item/LootBoxItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mcmodding/pepsa/suygecu/handler/item/LootBoxItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mcmodding/pepsa/suygecu/handler/item/LootBoxItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForgeGradleMod.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -402,12 +376,21 @@
       <option name="project" value="LOCAL" />
       <updated>1719607726981</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed drop item">
+      <option name="closed" value="true" />
+      <created>1719657272836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719657272836</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Suygecu lootbox and gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Suygecu lootbox and gui" />
+    <MESSAGE value="fixed drop item" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed drop item" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
 </project>
