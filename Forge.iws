@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ee9da3ff-e275-4176-98c1-88447f93c26a" name="Changes" comment="fixed drop item">
       <change beforePath="$PROJECT_DIR$/Forge.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Forge.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ForgeGradleMod.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +383,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719657272836</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed drop item">
+      <option name="closed" value="true" />
+      <created>1719660549476</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719660549476</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
