@@ -36,7 +36,6 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    implementation 'org.jetbrains:annotations:24.0.0'
     implementation 'org.jetbrains:annotations:23.0.0'
     implementation 'org.jetbrains:annotations:24.0.0'
 
@@ -72,6 +71,6 @@ processResources {
         exclude 'mcmod.info'
     }
 	sourceSets {
-    main { output.resourcesDir = output.classesDir }
+    main { output.resourcesDir = output.classesDirs.singleFile }
 }
 }
