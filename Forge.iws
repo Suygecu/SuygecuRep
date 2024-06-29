@@ -4,7 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee9da3ff-e275-4176-98c1-88447f93c26a" name="Changes" comment="" />
+    <list default="true" id="ee9da3ff-e275-4176-98c1-88447f93c26a" name="Changes" comment="Suygecu lootbox and gui">
+      <change beforePath="$PROJECT_DIR$/Forge.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Forge.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/config/splash.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2024-06-28-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2024-06-28-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/DIM-1/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/DIM-1/data/villages.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/DIM1/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/DIM1/data/villages.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/data/villages.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/playerdata/fe736038-102e-365b-a97e-eabc472944ec.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/playerdata/fe736038-102e-365b-a97e-eabc472944ec.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/stats/fe736038-102e-365b-a97e-eabc472944ec.json" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/Новый dasdмир/stats/fe736038-102e-365b-a97e-eabc472944ec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/usernamecache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyProject.main/mcmodding/pepsa/suygecu/handler/item/LootBoxItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyProject.main/mcmodding/pepsa/suygecu/handler/item/LootBoxItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mcmodding/pepsa/suygecu/handler/item/LootBoxItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mcmodding/pepsa/suygecu/handler/item/LootBoxItem.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +107,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Suygecu&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="eb948ed7-b697-469f-9fed-4041a5e42ca2" />
+        <option name="url" value="https://github.com/Suygecu/SuygecuRep.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />
@@ -101,16 +149,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Suygecu&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\MyProject\src\main\resources\assets\suygecu\textures\items\gui" />
@@ -346,9 +394,20 @@
       <option name="presentableId" value="Default" />
       <updated>1719564039626</updated>
     </task>
+    <task id="LOCAL-00001" summary="Suygecu lootbox and gui">
+      <option name="closed" value="true" />
+      <created>1719607726981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719607726981</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Suygecu lootbox and gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="Suygecu lootbox and gui" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
 </project>

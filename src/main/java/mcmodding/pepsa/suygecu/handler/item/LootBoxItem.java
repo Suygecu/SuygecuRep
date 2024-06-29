@@ -24,7 +24,7 @@ public class LootBoxItem extends Item {
     @Override
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
         if (!world.isRemote) {
-            List<ItemStack> items = new ArrayList<ItemStack>();
+            List<ItemStack> items = new ArrayList<>();
             List<WeightedRandomItem> weightedItems = getLootItems();
             for (int i = 0; i < 3; i++) {
                 ItemStack randomItem = getRandomItem(weightedItems);
@@ -35,12 +35,16 @@ public class LootBoxItem extends Item {
             itemStack.stackSize--;
 
             player.openGui(suygecu.INSTANCE, GuiHandler.LOOT_BOX_GUI_ID, world, (int) player.posX, (int) player.posY, (int) player.posZ);
+            //player.inventory.addItemStackToInventory()
+            for (ItemStack item : items) {
+                player.inventory.addItemStackToInventory(item);
+            }
         }
         return itemStack;
     }
 
     private List<WeightedRandomItem> getLootItems() {
-        List<WeightedRandomItem> items = new ArrayList<WeightedRandomItem>();
+        List<WeightedRandomItem> items = new ArrayList<>();
         items.add(new WeightedRandomItem(new ItemStack(RegItems.CHLEN), 60));
         items.add(new WeightedRandomItem(new ItemStack(RegItems.PEPSA), 20));
         items.add(new WeightedRandomItem(new ItemStack(RegItems.LOOTBOX), 10));
