@@ -1,8 +1,10 @@
 ## Based on GitHub's Eclipse .gitignore
 
 run/
+.shelf/
 .gradle/
 build/
+.out/
 gradle-app.setting
 
 ## IntelliJ IDEA
