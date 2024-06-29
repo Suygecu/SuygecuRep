@@ -7,6 +7,7 @@ import mcmodding.pepsa.suygecu.handler.RegItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.StatCollector;
 import net.minecraft.util.WeightedRandom;
 import net.minecraft.world.World;
 
@@ -15,11 +16,14 @@ import java.util.List;
 import java.util.Random;
 
 public class LootBoxItem extends Item {
+
     public LootBoxItem() {
         setUnlocalizedName("lootbox");
         setTextureName(suygecu.MOD_ID + ":lootbox_item");
         setMaxStackSize(1);
+
     }
+
 
     @Override
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
@@ -43,16 +47,27 @@ public class LootBoxItem extends Item {
         return itemStack;
     }
 
+    @Override
+    public void addInformation(ItemStack itemStack, EntityPlayer player, List tooltip, boolean advanced) {
+        tooltip.add(StatCollector.translateToLocal("item.lootbox.description"));
+        tooltip.add(StatCollector.translateToLocal("item.lootbox.description1"));
+        tooltip.add(StatCollector.translateToLocal("item.lootbox.description2"));
+        tooltip.add(StatCollector.translateToLocal("item.lootbox.description3"));
+    }
+
     private List<WeightedRandomItem> getLootItems() {
         List<WeightedRandomItem> items = new ArrayList<>();
-        items.add(new WeightedRandomItem(new ItemStack(RegItems.CHLEN), 60));
-        items.add(new WeightedRandomItem(new ItemStack(RegItems.PEPSA), 20));
-        items.add(new WeightedRandomItem(new ItemStack(RegItems.LOOTBOX), 10));
+        items.add(new WeightedRandomItem(new ItemStack(RegItems.CHLEN), 10));
+        items.add(new WeightedRandomItem(new ItemStack(RegItems.PEPSA), 3));
+        items.add(new WeightedRandomItem(new ItemStack(RegItems.LOOTBOX), 1));
         return items;
     }
+
 
     private ItemStack getRandomItem(List<WeightedRandomItem> items) {
         WeightedRandomItem randomItem = (WeightedRandomItem) WeightedRandom.getRandomItem(new Random(), items);
         return randomItem != null ? randomItem.stack : null;
     }
+
+
 }
