@@ -39,7 +39,6 @@ public class LootBoxItem extends Item {
             itemStack.stackSize--;
 
             player.openGui(suygecu.INSTANCE, GuiHandler.LOOT_BOX_GUI_ID, world, (int) player.posX, (int) player.posY, (int) player.posZ);
-            //player.inventory.addItemStackToInventory()
             for (ItemStack item : items) {
                 player.inventory.addItemStackToInventory(item);
             }
@@ -49,25 +48,46 @@ public class LootBoxItem extends Item {
 
     @Override
     public void addInformation(ItemStack itemStack, EntityPlayer player, List tooltip, boolean advanced) {
+
+        List<WeightedRandomItem> items = getLootItems();
         tooltip.add(StatCollector.translateToLocal("item.lootbox.description"));
-        tooltip.add(StatCollector.translateToLocal("item.lootbox.description1"));
-        tooltip.add(StatCollector.translateToLocal("item.lootbox.description2"));
-        tooltip.add(StatCollector.translateToLocal("item.lootbox.description3"));
+
+        for (WeightedRandomItem item : items) {
+            ItemStack stack = item.getItemStack();
+            String itemName = stack.getDisplayName();
+            int weight = item.itemWeight;
+            String colorCode = getColorForItem(stack);
+            tooltip.add(StatCollector.translateToLocalFormatted("tooltip.lootbox.item",itemName, colorCode, weight));
+
+
+        }
+
     }
+    private String getColorForItem(ItemStack stack) {
+        if (stack.getItem() == RegItems.CHLEN) {
+            return "§f";
+        } else if (stack.getItem() == RegItems.PEPSA) {
+            return "§9";
+        } else if (stack.getItem() == RegItems.LOOTBOX) {
+            return "§c";
+        }
+        return "§f";
+    }
+
+
 
     private List<WeightedRandomItem> getLootItems() {
         List<WeightedRandomItem> items = new ArrayList<>();
-        items.add(new WeightedRandomItem(new ItemStack(RegItems.CHLEN), 10));
-        items.add(new WeightedRandomItem(new ItemStack(RegItems.PEPSA), 3));
-        items.add(new WeightedRandomItem(new ItemStack(RegItems.LOOTBOX), 1));
+        items.add(new WeightedRandomItem(new ItemStack(RegItems.CHLEN), 100));
+        items.add(new WeightedRandomItem(new ItemStack(RegItems.PEPSA), 50));
+        items.add(new WeightedRandomItem(new ItemStack(RegItems.LOOTBOX), 10));
         return items;
     }
 
 
+
     private ItemStack getRandomItem(List<WeightedRandomItem> items) {
         WeightedRandomItem randomItem = (WeightedRandomItem) WeightedRandom.getRandomItem(new Random(), items);
-        return randomItem != null ? randomItem.stack : null;
+        return randomItem != null ? randomItem.itemStack : null;
     }
-
-
 }
