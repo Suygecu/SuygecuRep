@@ -76,13 +76,13 @@ public class LootBoxItem extends Item {
 
 
 
-    private List<WeightedRandomItem> getLootItems() {
-        List<WeightedRandomItem> items = new ArrayList<>();
-        items.add(new WeightedRandomItem(new ItemStack(RegItems.CHLEN), 100));
-        items.add(new WeightedRandomItem(new ItemStack(RegItems.PEPSA), 50));
-        items.add(new WeightedRandomItem(new ItemStack(RegItems.LOOTBOX), 10));
-        return items;
-    }
+//    private List<WeightedRandomItem> getLootItems() {
+//        List<WeightedRandomItem> items = new ArrayList<>();
+//        items.add(new WeightedRandomItem(new ItemStack(RegItems.CHLEN), 100));
+//        items.add(new WeightedRandomItem(new ItemStack(RegItems.PEPSA), 50));
+//        items.add(new WeightedRandomItem(new ItemStack(RegItems.LOOTBOX), 10));
+//        return items;
+//    }
 
 
 
