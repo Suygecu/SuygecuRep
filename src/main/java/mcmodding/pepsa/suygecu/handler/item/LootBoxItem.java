@@ -1,14 +1,13 @@
 package mcmodding.pepsa.suygecu.handler.item;
 
 import mcmodding.pepsa.suygecu.handler.GuiHandler;
-import mcmodding.pepsa.suygecu.handler.WeightedRandomItem;
 import mcmodding.pepsa.suygecu.suygecu;
 import mcmodding.pepsa.suygecu.handler.RegItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
-import net.minecraft.util.WeightedRandom;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
@@ -17,29 +16,64 @@ import java.util.Random;
 
 public class LootBoxItem extends Item {
 
+    private final List<WeightedItem> items;
+
     public LootBoxItem() {
+        this.items = new ArrayList<>();
         setUnlocalizedName("lootbox");
         setTextureName(suygecu.MOD_ID + ":lootbox_item");
         setMaxStackSize(1);
 
+
+        addItem(RegItems.CHLEN, 100);
+        addItem(RegItems.PEPSA, 50);
+        addItem(RegItems.LOOTBOX, 10);
     }
 
+    public void addItem(Item item, int weight) {
+        items.add(new WeightedItem(item, weight));
+    }
+
+    public List<WeightedItem> getItems() {
+        return items;
+    }
+
+    public static class WeightCalculator {
+        public static int getAllWeight(List<WeightedItem> items) {
+            int totalWeight = 0;
+            for (WeightedItem weightedItem : items) {
+                totalWeight += weightedItem.getWeight();
+            }
+            return totalWeight;
+        }
+    }
+
+    public Item getRandomItem(List<WeightedItem> items) {
+        int totalWeight = WeightCalculator.getAllWeight(items);
+        int randomNumber = new Random().nextInt(totalWeight);
+        for (WeightedItem weightedItem : items) {
+            randomNumber -= weightedItem.getWeight();
+            if (randomNumber < 0) {
+                return weightedItem.getItem();
+            }
+        }
+        return null;
+    }
 
     @Override
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
         if (!world.isRemote) {
-            List<ItemStack> items = new ArrayList<>();
-            List<WeightedRandomItem> weightedItems = getLootItems();
+            List<ItemStack> itemsToAdd = new ArrayList<>();
             for (int i = 0; i < 3; i++) {
-                ItemStack randomItem = getRandomItem(weightedItems);
+                Item randomItem = getRandomItem(this.items);
                 if (randomItem != null) {
-                    items.add(randomItem);
+                    itemsToAdd.add(new ItemStack(randomItem));
                 }
             }
             itemStack.stackSize--;
 
             player.openGui(suygecu.INSTANCE, GuiHandler.LOOT_BOX_GUI_ID, world, (int) player.posX, (int) player.posY, (int) player.posZ);
-            for (ItemStack item : items) {
+            for (ItemStack item : itemsToAdd) {
                 player.inventory.addItemStackToInventory(item);
             }
         }
@@ -48,21 +82,16 @@ public class LootBoxItem extends Item {
 
     @Override
     public void addInformation(ItemStack itemStack, EntityPlayer player, List tooltip, boolean advanced) {
-
-        List<WeightedRandomItem> items = getLootItems();
         tooltip.add(StatCollector.translateToLocal("item.lootbox.description"));
 
-        for (WeightedRandomItem item : items) {
-            ItemStack stack = item.getItemStack();
-            String itemName = stack.getDisplayName();
-            int weight = item.itemWeight;
-            String colorCode = getColorForItem(stack);
-            tooltip.add(StatCollector.translateToLocalFormatted("tooltip.lootbox.item",itemName, colorCode, weight));
-
-
+        for (WeightedItem weightedItem : items) {
+            String itemName = new ItemStack(weightedItem.getItem()).getDisplayName();
+            int weight = weightedItem.getWeight();
+            String colorCode = getColorForItem(new ItemStack(weightedItem.getItem()));
+            tooltip.add(StatCollector.translateToLocalFormatted("tooltip.lootbox.item", itemName, colorCode, weight));
         }
-
     }
+
     private String getColorForItem(ItemStack stack) {
         if (stack.getItem() == RegItems.CHLEN) {
             return "§f";
@@ -74,20 +103,21 @@ public class LootBoxItem extends Item {
         return "§f";
     }
 
+    public class WeightedItem {
+        private final Item item;
+        private final int weight;
 
+        public WeightedItem(Item item, int weight) {
+            this.item = item;
+            this.weight = weight;
+        }
 
-//    private List<WeightedRandomItem> getLootItems() {
-//        List<WeightedRandomItem> items = new ArrayList<>();
-//        items.add(new WeightedRandomItem(new ItemStack(RegItems.CHLEN), 100));
-//        items.add(new WeightedRandomItem(new ItemStack(RegItems.PEPSA), 50));
-//        items.add(new WeightedRandomItem(new ItemStack(RegItems.LOOTBOX), 10));
-//        return items;
-//    }
+        public Item getItem() {
+            return item;
+        }
 
-
-
-    private ItemStack getRandomItem(List<WeightedRandomItem> items) {
-        WeightedRandomItem randomItem = (WeightedRandomItem) WeightedRandom.getRandomItem(new Random(), items);
-        return randomItem != null ? randomItem.itemStack : null;
+        public int getWeight() {
+            return weight;
+        }
     }
 }

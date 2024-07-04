@@ -2,6 +2,8 @@ package mcmodding.pepsa.suygecu;
 
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import mcmodding.pepsa.suygecu.handler.GuiHandler;
+import mcmodding.pepsa.suygecu.handler.RegItems;
+import mcmodding.pepsa.suygecu.handler.item.LootBoxItem;
 import mcmodding.pepsa.suygecu.proxy.CommonProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -11,6 +13,7 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 
 @Mod(modid = suygecu.MOD_ID, version = suygecu.VERSION)
 public class suygecu {
+    public static LootBoxItem lootBox;
     public static final String MOD_ID = "suygecu";
     public static final String VERSION = "1.0";
 
@@ -28,6 +31,10 @@ public class suygecu {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        lootBox = new LootBoxItem();
+        lootBox.addItem(RegItems.CHLEN, 100);
+        lootBox.addItem(RegItems.PEPSA, 50);
+        lootBox.addItem(RegItems.LOOTBOX, 10);
         proxy.init(event);
     }
 
@@ -36,3 +43,5 @@ public class suygecu {
         proxy.postInit(event);
     }
 }
+
+
